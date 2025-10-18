@@ -13,7 +13,7 @@ app.use(express.json());
 
 // --- MongoDB Connection ---
 mongoose
-  .connect(process.env.MONGO_URI || "mongodb://127.0.0.1:27017/expenseTracker", {
+  .connect( "mongodb+srv://ataherelae_db_user:HDaLqKs4HJ46cpfi@cluster0.dxumqpk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
